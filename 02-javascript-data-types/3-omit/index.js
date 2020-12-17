@@ -6,10 +6,10 @@
  */
 export const omit = (obj, ...fields) => {
   let array = Object.entries(obj);
-  array = array.filter(function(element){
-  let key = element[0];
-  return !fields.includes(key);});
+  array = array.filter(function(element) {
+    let key = element[0];
+    return !fields.includes(key);});
 
-  return Object.fromEntries(array);}
+  return Object.fromEntries(array);};
 
 
